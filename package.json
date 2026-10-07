@@ -1,0 +1,19 @@
+{
+  "name": "sudoku-exact-cover",
+  "version": "1.0.0",
+  "private": true,
+  "description": "sudoku exact cover backend",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "start": "node dist/server.js",
+    "cli": "node dist/cli.js",
+    "demo": "node dist/cli.js demo",
+    "test": "npm run build && node --test dist-test/test/*.test.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "@types/node": "^22.0.0"
+  }
+}
+
